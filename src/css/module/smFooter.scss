@@ -1,0 +1,20 @@
+.footer-box{
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    p{margin-bottom: 20px;
+        a, span{
+            display: inline-block;
+            margin-right: 20px;
+            width: 156px;
+            height: 46px;
+            cursor: pointer;
+            img{vertical-align: middle;}
+        }
+        .online315{
+            width: 96px;
+            height: 42px;
+        }
+    }
+}

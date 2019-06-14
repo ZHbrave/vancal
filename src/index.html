@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凡客VANCL-互联网快时尚品牌,服装,鞋,配饰,网上购物货到付款网站,7天无条件退货</title>
+    <link rel="stylesheet" href="/libs/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <!-- 用来加载头部的容器 -->
+    <header id="header-container"></header>
+
+    <!-- 首页的主题区域开始 -->
+    <main>
+        <div class="wrap">
+            <!-- 轮播图容器 -->
+            <div class="swiper-container">
+                <!-- 轮播图 -->
+                <div class="swiper-wrapper">
+                    <a href="/html/list.html" class="swiper-slide"><img src="/imgs/pic1.jpg" alt=""></a>
+                    <a href="/html/list.html" class="swiper-slide"><img src="/imgs/pic2.jpg" alt=""></a>
+                    <a href="/html/list.html" class="swiper-slide"><img src="/imgs/pic3.jpg" alt=""></a>
+                    <a href="/html/list.html" class="swiper-slide"><img src="/imgs/pic4.jpg" alt=""></a>
+                    <a href="/html/list.html" class="swiper-slide"><img src="/imgs/pic5.jpg" alt=""></a>
+                </div>
+                <!-- 导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- 分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 以下为推荐列表模块 -->
+            <div class="tip-lists">
+                <a href="/html/list.html" class="getMoney"><img src="/imgs/pic100.jpg" alt=""></a>
+                <a href="/html/list.html" class="seckill">
+                    <span>
+                        <em class="wordBox">该场秒杀已结束</em>
+                        <b>00</b>
+                        <em></em>
+                        <b>00</b>
+                        <em></em>
+                        <b>00</b>
+                    </span>
+                </a>
+                <ul class="seckill-list" id="seckill-list">
+                    <script type="text/html" id="seckill-template">
+                        {{each list item}}
+                        <li>
+                            <a href="/html/list.html">
+                                <img src="{{item.img}}" alt="">
+                                <p>{{item.text}}</p>
+                                <div class="last-price">￥{{item.lastPrice}}</div>
+                                <div class="priceBox">
+                                    <span class="now-price">￥<em>{{item.nowPrice}}</em></span>
+                                    <span class="recharg-price">充值后<em>{{item.rechargPrice}}</em>元</span>
+                                </div>
+                            </a>
+                        </li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
+            <div class="hot-shop">
+                <div class="products">
+                    <img src="/imgs/ht.jpg" alt="">
+                    <a href="javscript:;"></a>
+                </div>
+            </div>
+            <ul class="rec-shop" id="rec-shop">
+                <script type="text/html" id="rec-template">
+                    {{each list item}}
+                    <li><a href="/html/list.html"><img src="{{item.img}}" alt=""></a></li>
+                    {{/each}}
+                </script>
+            </ul>
+            <div class="optimization">
+                <h2>优选推荐</h2>
+                <ul class="opShop">
+                    <li class="pic_one">
+                        <a href="javascript:;">
+                            <img src="http://i1.vanclimg.com/cms/20181120/pc01.jpg" alt="">
+                        </a>
+                        <p><span>充值购买更优惠</span>4.0日式免烫衬衫</p>
+                    </li>
+                    <li class="pic_two">
+                        <div class="pic-center">
+                            <a href="javascript:;">
+                                <img src="http://i1.vanclimg.com/cms/20190423/njf.jpg" alt="">
+                            </a>
+                            <p><span>充值相当于<em>59元</em>起</span>棉麻衬衫</p>
+                        </div>
+                        <div class="pic-center">
+                            <a href="javascript:;">
+                                <img src="http://i1.vanclimg.com/cms/20190527/g.jpg" alt="">
+                            </a>
+                            <p><span>充值相当于<em>59元</em>起</span>棉麻衬衫</p>
+                        </div>
+                    </li>
+                    <li class="pic_three">
+                        <a href="javascript:;">
+                            <img src="http://i1.vanclimg.com/cms/20190322/srm.jpg" alt="">
+                        </a>
+                        <p><span>充值购买更优惠</span>4.0日式免烫衬衫</p> 
+                    </li>
+                </ul>
+                <ul class="opShop">
+                    <li class="pic_one">
+                        <a href="javascript:;">
+                            <img src="http://i1.vanclimg.com/cms/20190527/polo..jpg" alt="">
+                        </a>
+                        <p><span>充值购买更优惠</span>4.0日式免烫衬衫</p>
+                    </li>
+                    <li class="pic_two">
+                        <div class="pic-center">
+                            <a href="javascript:;">
+                                <img src="http://i1.vanclimg.com/cms/20190527/mm.jpg" alt="">
+                            </a>
+                            <p><span>充值相当于<em>59元</em>起</span>棉麻衬衫</p>
+                        </div>
+                        <div class="pic-center">
+                            <a href="javascript:;">
+                                <img src="http://i1.vanclimg.com/cms/20190423/stk.jpg" alt="">
+                            </a>
+                            <p><span>充值相当于<em>59元</em>起</span>棉麻衬衫</p>
+                        </div>
+                    </li>
+                    <li class="pic_three">
+                        <a href="javascript:;">
+                            <img src="http://i1.vanclimg.com/cms/20190527/hw.jpg" alt="">
+                        </a>
+                        <p><span>充值购买更优惠</span>4.0日式免烫衬衫</p> 
+                    </li>
+                </ul>
+            </div>
+            <div class="paths">
+                <h2>下装推荐</h2>
+                <ul class="paths-list">
+                    <li>
+                        <a href="javascript:;"><img src="http://i5.vanclimg.com/cms/20190508/kz285438.jpg" alt=""></a>
+                        <p><span>充值购买更优惠</span>4.0日式免烫衬衫</p>                         
+                    </li>
+                    <li>
+                            <a href="javascript:;"><img src="http://i5.vanclimg.com/cms/20190508/kz285438.jpg" alt=""></a>
+                            <p><span>充值购买更优惠</span>4.0日式免烫衬衫</p>                         
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="http://i5.vanclimg.com/cms/20190508/kz285438.jpg" alt=""></a>
+                        <p><span>充值购买更优惠</span>4.0日式免烫衬衫</p>                         
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="http://i5.vanclimg.com/cms/20190508/kz285438.jpg" alt=""></a>
+                        <p><span>充值购买更优惠</span>4.0日式免烫衬衫</p>                         
+                    </li>
+                </ul>
+            </div>
+            <!-- 更多 -->
+            <div class="moreShop">
+                <h2>更多精品</h2>
+                <ul class="">
+                    <li><a href="javascript:;"><img src="http://i3.vanclimg.com/cms/20190509/fbx.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="http://i1.vanclimg.com/cms/20190423/pc15.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="http://i5.vanclimg.com/cms/20190509/jj.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="http://i2.vanclimg.com/cms/20190509/nyg.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="http://i1.vanclimg.com/cms/20190509/xb.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="http://i4.vanclimg.com/cms/20190527/sy.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- 首页的主体区域结束 -->
+
+    <!-- 用来加载尾部的容器 -->
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/index"></script>
+</body>
+</html>

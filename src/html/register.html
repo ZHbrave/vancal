@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凡客诚品-会员免费注册</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="/index.html" class="logo"></a>
+            <a href="javascript:;" class="help">帮助</a>
+        </header>
+        <main>
+            <div class="title">
+                <h3>凡客 Vancl 注册
+                    <span>我已经注册，现在就<a href="/html/login.html">登录</a></span>
+                </h3>
+                
+            </div>
+            <div class="advert">
+                    <img src="http://i1.vanclimg.com/cms/20160902/login120412_newlogo.jpg" alt="">
+            </div>
+            <div class="login-box">
+                <div class="infor">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="验证码" class="phonenum">
+                            <img src="/imgs/CalculateValidateCode.jpg" alt="" class="imgcode">
+                            <span class="v2reg_tips02">请输入图片验证码</span>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="请输入手机号" class="phonenum" id="phoNum">
+                            <a href="javascript:;" class="getcode">获取短信验证码</a>
+                            <span class="v2reg_tips02">请输入手机号码</span>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="填写手机验证码">
+                            <span></span>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="设定登录密码" class="password">
+                            <span></span>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="再次输入密码">
+                            <span></span>
+                        </li>
+                        <li class="libox">
+                            <div class="v2reg_bt">
+                                <div class="check-box">
+                                    <input type="checkbox">
+                                    <span>请阅读<em>《VANCL凡客诚品服务条款》</em></span>
+                                </div>
+                                <a href="javascript:;" class="register-in">注册</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer id="smFooter"></footer>
+    </div>
+<script src="/libs/requirejs/require.js" data-main="/js/register.js"></script>
+</body>
+</html>

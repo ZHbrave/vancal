@@ -1,0 +1,258 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+main{
+    width: 100%;
+    height: auto;
+    // 二级标题字体样式
+    h2{
+        text-align: center;
+        line-height: 50px;
+        margin: 30px 0px;
+        font-family: "Microsoft YaHei";
+        color: #9a9a9a;
+        font-size: 18px; 
+    }
+    .swiper-container{
+        width: 1200px;
+        height: 537px;
+        .swiper-wrapper{
+            width: 1200px;
+            height: 537px;
+            position: relative;
+            a{
+                display: block;
+                width: 1200px;
+                height: 535px;
+                
+                img{
+                    width: 1200px;
+                    height: 535px;
+                }
+            }
+        }
+    }
+    .tip-lists{
+        width:1200px;
+        height: auto;
+        margin-top: 40px;
+        .getMoney{
+            display: block;
+            margin: 20px 0;
+            // img{width: 1200px;;height: 60px;}
+        }
+        .seckill{
+            display: block;
+            height: 64px;
+            line-height: 64px;
+            background: url(/imgs/ms.jpg) no-repeat scroll;
+            text-align: center;
+            font-family: "Microsoft YaHei";
+            color: #9a9a9a;
+            font-size: 18px;
+            span{
+                color: #a10000;
+                margin-left: 20px;
+                float: right;
+                padding-right: 30px;
+                em{padding-left: 35px;}
+                .wordBox{
+                    color: #ffffff;
+                    padding-right: 25px;
+                }
+            }
+        }
+        .seckill-list{
+            color: #474747;
+            font-weight: bold;
+            font-family: "Microsoft YaHei";
+            overflow: hidden;
+            margin: 10px 0 0 0;
+            padding: 0;
+            width: 1210px;
+            li{
+                float: left;
+                width: 232px;
+                margin-right: 10px;
+                a{
+                    color: #474747;
+                    font-weight:normal;
+                    img{
+                        width: 232px;
+                        height: 232px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-top: 10px;
+                        height: 45px;
+                    }
+                    .last-price{
+                        color: #d3d3d3;
+                        font-size: 14px;
+                        text-decoration: line-through;  
+                    }
+                    .priceBox{
+                        position: relative;
+                       .now-price{
+                        display: block;
+                        color: #bb2b34;
+                        font-size: 16px;
+                       }
+                       .recharg-price{
+                        position: absolute;
+                        right: 10px;
+                        bottom: 0;
+                        font-size: 16px;
+                        em{
+                            font-size: 24px;
+                            font-style: normal;
+                            color: #bb2b34;
+                            font-weight: bolder;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hot-shop{
+        .products{
+            position: relative;
+            margin-top: 12px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            a{
+                display: block;
+                width: 200px;
+                height: 84px;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    .rec-shop{
+        width: 1200px;
+        overflow: hidden;
+        li{
+            width: 268px;
+            height: 424px;
+            float: left;
+            margin-right: 27px;
+            margin-bottom: 20px;
+            a{
+                img{
+                    width: 268px;
+                    height: 424px;
+                }
+            }
+        }
+    }
+    .optimization{
+        margin-top: 50px;
+        height: 1170px;
+        .opShop{
+            p{
+                height: 28px;
+                padding: 20px 12px;
+                line-height: 28px;
+                border: 1px solid #e8e7ec;
+                border-top: 0px;
+                font-family: "Microsoft YaHei";
+                font-size: 14px;
+                span{
+                    float: right;
+                    color: #a10000;
+                    font-family: Arial;
+                    line-height: 24px;
+                    font-size: 14px;
+                    em{
+                        font-size: 16px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .pic_one{
+                width: 590px;
+                float: left;
+                margin-right: 17px
+                img{
+                    width: 590px;
+                    height: 440px;
+                }
+            }
+            .pic_two{
+                width: 290px;
+                float: left;
+                margin-left: 17px;
+                margin-right: 17px;
+                .pic-center{
+                    margin-bottom: 16px;
+                    img{
+                        width: 290px;
+                        height: 180px;
+                    }
+                }
+            }
+            .pic_three{
+                width: 286px;
+                float: left;
+                margin-right: 0px;
+                img{
+                    widows: 286px;
+                    height: 440px;
+                }
+            }
+        }
+    }
+    .paths{
+        .paths-list{
+            li{
+                width:285px;
+                height: 508px;
+                float: left;
+                margin-right: 15px;
+                margin-bottom: 20px;
+                img{
+                    width: 285px;
+                    height: 438px;
+                }
+                p{
+                    height: 28px;
+                    padding: 20px 12px;
+                    line-height: 28px;
+                    border: 1px solid #e8e7ec;
+                    border-top: 0px;
+                    font-family: "Microsoft YaHei";
+                    font-size: 14px;
+                    span{
+                        float: right;
+                        color: #a10000;
+                        font-family: Arial;
+                        line-height: 24px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .moreShop{
+        ul{
+            li{
+                margin-right: 0px;
+                margin-bottom: 0px;
+                float: left;
+                width: 385px;
+                height: 275px;
+                margin: 0px 15px 28px 0px;
+                img{
+                    width: 385px;
+                    height: 275px;
+                }
+            }
+        }
+    }
+}

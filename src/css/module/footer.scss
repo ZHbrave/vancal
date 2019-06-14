@@ -1,0 +1,132 @@
+footer{
+    width: 100%;
+    height: auto;
+    .serNav{
+        margin-top: 32px;
+        width: 1118px;
+        height: 282px;
+        padding: 0px 40px 0px;
+        border: 1px solid #e0e0e1;
+        font-family: "Microsoft YaHei";
+        margin-bottom: 25px;
+        .serNav-top{
+            margin: 33px 0px 23px;
+            overflow: hidden;
+            li{
+                width: 370px;
+                height: 138px;
+                border-right: 1px solid #e0e0e1;
+                margin-right: 0px;
+                float: left;
+                p{
+                    text-align: center;
+                    font-size: 14px;
+                    color: #727171;
+                    line-height: 26px;
+                    em{color: #a10000;}
+                }
+                .onlineCustomer{
+                    margin: 15px auto 30px;
+                }
+                .onlineTime{
+                    margin: 0px auto;
+                    width: 156px;
+                    height: 32px;
+                    text-align: center;
+                    line-height: 32px;
+                    font-size: 14px;
+                    background: #b81c22;
+                    color: #ffffff;
+                }
+                .seven{margin: 20px 0px;}
+            }
+            .twocode{
+                border-right: none;
+                p{
+                    img{
+                        margin-bottom: 10px;
+                        width: 104px;
+                        height: 104px;
+                    }
+                }
+            }
+        }
+        .serNav-bottom{
+            height: 26px;
+            padding: 17px 0px 14px;
+            background: #f8f8f8;
+            margin: 0;
+            li{
+                padding: 0px 65px;
+                line-height: 26px;
+                border-right: 1px solid #dadadb;
+                width: auto;
+                text-align: center;
+                margin-right: 0px;
+                float: left;
+                a{color: #323232;}
+            }
+            .lastli{
+                border-right: none;
+            }
+        }
+    }
+    .link{
+        .link-top{
+            border-top: 1px solid #3e3a39;
+            width: 1200px;
+            height: auto;
+            margin: 10px auto;
+            p{
+                text-align: center;
+                line-height: 25px;
+                color: #3e3a39;
+                font-family: "Microsoft YaHei"
+            }
+        }
+        .link-bottom{
+            padding-top: 20px;
+            width: 980px;
+            margin: 0px auto 25px;
+            text-align: center;
+            a{
+                margin: 0 10px;
+                img{
+                    width: 120px;
+                    height: 39px;
+                }
+            }
+            .redLogo{
+                background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll 0 -581px transparent;
+                display: inline-block;
+                height: 42px;
+                width: 113px;
+            }
+            .costumeOrg{
+                background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll 0 -629px transparent;
+                display: inline-block;
+                height: 45px;
+                width: 156px;
+                margin: 0 10px;
+            }
+            .wsjyBzzx{
+                background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll 0 -675px transparent;
+                display: inline-block;
+                height: 42px;
+                width: 96px;
+            }
+            .vanclMsg{
+                background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll -97px -675px transparent;
+                display: inline-block;
+                height: 42px;
+                width: 101px;
+            }
+            .vanclqingNian{
+                background: url(http://i.vanclimg.com/cms/20140116/spritesbgtop.png) no-repeat scroll -202px -675px transparent;
+                display: inline-block;
+                height: 42px;
+                width: 42px;
+            }
+        }
+    }
+}

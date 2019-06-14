@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+    <!-- header容器 -->
+    <header id="header-container"></header>
+    <main>
+        <div class="wrap" id="mainDetail">
+            <!-- 导航标题 -->
+            <script type="text/html" id="detailTemplate">
+                <div class="breadNav">
+                    <a href="/index.html">首页</a>
+                    <span>></span>
+                    <a href="/html/list.html">男装</a>
+                    <span>></span>
+                    <a href="/html/list.html">牛仔裤</a>
+                    <span>></span>
+                    <a href="/html/list.html">牛仔长裤</a>
+                    <span>></span>
+                    <span>{{data.text}}{{data.serial}}</span>
+                </div>
+                <div class="danpinArea">
+                    <h2>{{data.text}}{{data.serial}} {{data.color.color1}}</h2>
+                    <ul class="ProductSubnav">
+                        <li><a href="javascript:;">产品描述</a>|</li>
+                        <li><a href="javascript:;">评论</a>|</li>
+                        <li><a href="javascript:;">提问</a></li>
+                    </ul>
+                </div>
+                <!-- detail容器 -->
+                <div class="detail-box">
+                    <!-- 放大镜 -->
+                    <div class="danpinLeft">
+                        <div class="view_bd">
+                            <img class="zoom-img" src="{{data.img[0]}}" data-zoom-image="{{data.img[0]}}"/>
+                        </div>
+                        <div class="view_thumbs" id="gal1">
+                            <ul class="view-ul">
+                                <li class="current">
+                                    <a href="#" data-image="{{data.img[0]}}" data-zoom-image="{{data.img[0]}}">
+                                        <img class="s" src="{{data.img[0]}}" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-image="{{data.img[1]}}" data-zoom-image="{{data.img[1]}}">
+                                    <img class="s" src="{{data.img[1]}}" /></a>
+                                </li>
+                                <li>
+                                    <a href="#" data-image="{{data.img[2]}}" data-zoom-image="{{data.img[2]}}">
+                                    <img class="s" src="{{data.img[2]}}" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 商品数据详情 -->
+                    <div class="danpinRight">
+                        <div class="danpinContent">
+                            <div class="price">
+                                <span class="price-num">售价：￥<em>{{data.price}}</em></span>
+                                <a href="javascript:;">充100返100，点击充值</a>
+                            </div>
+                            <div class="selectArea">
+                                <div class="danpinColor_Select">
+                                    <p class="colors">颜色：</p>
+                                    <ul class="selColor">
+                                        <li class="checkColor">
+                                            <div class="colorBlock">
+                                                <a href="javascript:;">
+                                                    <img src="{{data.img[0]}}" alt="">
+                                                    <div class="colorSel">{{data.color.color1}}</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="colorBlock">
+                                                <a href="javascript:;">
+                                                    <img src="{{data.img[1]}}" alt="">
+                                                    <div class="colorSel">{{data.color.color2}}</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="selSizeArea">
+                                    <p class="danpinColorTitle">尺码：</p>
+                                    <ul class="selSize">
+                                        <li class="checkSize">29</li>
+                                        <li>30</li>
+                                        <li>31</li>
+                                        <li>32</li>
+                                        <li>33</li>
+                                        <li>34</li>
+                                        <li>35</li>
+                                    </ul>
+                                    <div class="danpin_xuanzeGMcm">
+                                        <span></span>
+                                        <p>请选择您需要的尺码</p>
+                                    </div>
+                                </div>
+                                <div class="shop-num">
+                                    <p>数量：</p>
+                                    <div class="danpinnumSelect">
+                                        <select name="danpinnumSelect" class="selectedAmount" id="selectNum">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="AreaItotal">
+                                    <p>已选：</p>
+                                    <div class="goodsAdd">
+                                        <span class="SelectName">黑色</span><em>，</em>
+                                        <span class="SelectSize">29</span>
+                                        <span class="NowHasGoods">现在有货</span>
+                                    </div>
+                                </div>
+                                <div class="purchase">
+                                    <a href="javascript:;" class="btnnowbuy">立即购买</a>
+                                    <a href="javascript:;" class="btnaddtocart" id="addCar"></a>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="promotion">
+                            <div class="danpin_YhTsBox ">
+                                <h4><span>优惠提示</span></h4>
+                                <ul>
+                                    <li><span>免邮</span>全场购买199元免运费</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sideBarSettabArea"></div>
+            </script>
+        </div>
+    </main>
+    <!-- footer容器 -->
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/detail.js"></script> 
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <header id="header-container"></header>
+    <main>
+        <div class="wrap">
+            <!-- 分类导航 -->
+            <div class="breadnav">
+                <div class="locationdiv"><span>当前位置：</span><a href="javascript::">所有分类</a></div>
+                <div class="tsmsg">找到和<span>针织衫</span>相关商品<span>92</span>款</div>
+            </div>
+            <div class="selectarea">
+                <div class="selectareaLeft">服装</div>
+                <div class="selectareaRight"><span>男装(<em>100</em>)</span><span>女装(<em>50</em>)</span></div>
+                <span class="selectareali_a"></span>
+            </div>
+            <div class="floatdiv">
+                <div class="shopScreen">
+                    <a href="javascript:;" class="shop-btn">全部商品</a>
+                    <div class="pageBoxN5">
+                        <span>1/1</span>
+                        <span><a href="javascript:;" class="jquery_pager_prevpage "></a></span>
+                        <span><a href="javascript:;" class="jquery_pager_nextpage "></a></span>
+                    </div>
+                </div>
+                <!-- 排序筛选 -->
+                <div class="screen">
+                    <ul class="screen-ul" id="screen-ul">
+                        <li class="default">
+                            <a href="javascript:;"><em>默认</em><span class="redPic">按推荐由高到低</span></a>
+                        </li>
+                        <li class="sales">
+                            <a href="javascript:;"><em>销量</em><span>按销量由高到低</span></a>
+                        </li>
+                        <li class="comment">
+                            <a href="javascript:;"><em>默认</em><span>按好评由高到低</span></a>
+                        </li>
+                        <li class="newest">
+                            <a href="javascript:;"><em>默认</em><span>上架新品</span></a>
+                        </li>
+                        <li class="cost">
+                            <a href="javascript:;"><em>默认</em><span>按价格从低到高</span></a>
+                            <span class="triggerMore">更多</span>
+                            <div class="cost-list">
+                                <p>
+                                    <a href="javascript:;" id="priceLow"><em>默认</em><span>按价格从低到高</span></a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" id="priceHign"><em>默认</em><span>按价格从高到低</span></a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;"><em>默认</em><span>按折扣从高到低</span></a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;"><em>默认</em><span>默直降高到低</span></a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 自主筛选框 -->
+                    <div class="searchbarPrice">
+                        <div class="searchbarTextN50124">
+                            <div class="searchbarInit">
+                                <input type="text" class="floor">
+                                <span class="Fline0124">-</span>
+                                <input type="text" class="ceil">
+                            </div>
+                            <div class="searchbarFoused">
+                                <p>
+                                    <a href="javascript" class="searchbarBtnCommon">清空</a>
+                                    <a href="javascript" class="searchbarBtnStrong"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="merge">
+                        <a href="javascrit:;">合并同款</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 商品列表 -->
+            <div class="list-box">
+                <ul class="shop-list" id="shop-list">
+                    <script type="text/html" id="shopList-template">
+                        {{each list item}}
+                        <li>
+                            <div class="pic">
+                                <a href="/html/detail.html?id={{item.id}}"><img src="{{item.img}}" alt=""></a>
+                                <div class="newview"></div>
+                                <div class="vancllist_logo"></div>
+                            </div>
+                            <p><a href="javascript:;">{{item.text}}</a></p>
+                            <div class="price-text"><span>售价￥{{item.price}}</span></div>
+                        </li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
+            <!-- 分页 -->
+            <div class="searchPage">
+                <span class="prevpage"><a href="javascript:;">上一页</a></span>
+                <ul><li>1</li></ul>
+                <span class="nextpage"><a href="javascript:;">下一页</a></span>
+                <em>共1页</em>
+                <b>到第</b>
+                <input type="text" value="1" class="pageGGshuru">
+                <b>页</b>
+                <input type="button" class="pageok">
+            </div>
+        </div>
+    </main>
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/list"></script>
+</body>
+</html>

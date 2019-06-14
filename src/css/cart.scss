@@ -1,0 +1,280 @@
+@import "module/base.scss";
+@import "module/smFooter.scss";
+@mixin smWrap {
+    width: 950px;
+    padding: 0 15px;
+}
+body{
+    width: 100%;
+    .wrapper{
+        margin: 0 auto;
+        width: 980px;
+        font: 12px Arial,Helvetica,sans-serif,宋体;
+        a{color: #333; cursor: pointer;}
+        img,input{vertical-align: middle;}
+        header{
+            border-bottom: 1px solid #7A7F89;
+            padding-top: 15px;
+            height: 39px;
+            .logo{
+                float: left;
+                display: block;
+                height: 39px;
+                width: 311px;
+            }
+            .help{
+                float: right;
+                line-height: 39px;
+            }
+            .users{
+                margin-right: 40px;
+                color: #666;
+                float: right;
+                line-height: 39px;
+                a{
+                    color: #a10000;
+                    padding: 0 5px;
+                }
+                .after-login{display: none;}
+                .username{display: none;}
+            }
+
+        }
+        main{
+            .location{
+                background: url(//ssl.vanclimg.com/shopping/newpromotions/newProm.gif);
+                background-position: 0 0;
+                height: 28px;
+                width: 540px;
+                margin-top: 10px;
+                em, span{
+                    color: #666;
+                    display: inline-block;
+                    font-weight: bold;
+                    line-height: 28px;
+                    text-align: center;
+                    width: 170px;
+                }
+                em{color: #fff;}
+            }
+            .content{
+                margin-top: 10px;
+                margin-bottom: 30px;
+                .cart-top{
+                    height: 30px;
+                    overflow: hidden;
+                    padding-left: 45px;
+                    width: 935px;
+                    background: url(//ssl.vanclimg.com/shopping/newpromotions/newpromotion.gif) no-repeat 0 0;
+                    background-position: -460px 0;
+                    h2{
+                        line-height: 38px;
+                        margin-right: 8px;
+                    }
+                }
+                .tip{
+                    margin-top: 6px;
+                    color: #656565;
+                    line-height: 20px;
+                    span{color: #a10000;}
+                }
+                .cart-products{
+                    margin-top: 10px;
+                    a{&:hover{color: #a10000;}}
+                    .bar-title{width: 80px;}
+                    .shopname{width: 343px;}
+                    .size{width: 80px;}
+                    .unit-price{width: 80px;}
+                    .num{width: 100px;}
+                    .discount{width: 45px;}
+                    .subtotal{width: 92px;}
+                    .operation{width: 78px;}
+                    .ckb{width: 13px;height: 13px;}
+                    .allcheck{margin-right: 10px;}
+                    .products-title{
+                        @include smWrap();
+                        height: 37px;
+                        border: 1px solid #DCDFE4;
+                        border-bottom-color: #B7B7B7;
+                        background: url(//ssl.vanclimg.com/shopping/newpromotions/carthd.png) repeat-x;
+                        li{
+                            
+                            height: 37px;
+                            font-weight: bold;
+                            line-height: 37px;
+                            text-align: center;
+                            float: left;
+                        }
+                        .bar-title{
+                            text-align: left;
+                        }
+                        .shopname{margin-left: 50px;}
+                        
+                    }
+                    .products-cont{
+                        border: 1px solid #DCDFE4;
+                        border-top: none;
+                        @include smWrap();
+                        padding-top:21px;
+                        padding-bottom: 18px;
+                        li{
+                            background: #F8F8F8;
+                            // text-align: center;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            position: relative;
+                            img{width: 50px;height: 50px;}
+                            span, a{
+                                display: inline-block;
+                                text-align: center;
+                            }
+                            .shopname{
+                                width: 317px;
+                                text-align: left;
+                                padding-left: 10px;
+                                
+                            }
+                            .subtotal{
+                                width: 83px;
+                            }
+                            .num{
+                                input{
+                                    margin: 0 5px;
+                                    width: 30px;
+                                    height: 18px;
+                                    border: 1px solid #D8D8D8;
+                                    text-align: center;
+                                }
+                                a{
+                                    display: inline-block;
+                                    border: 0 none;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    vertical-align: middle;
+                                    width: 17px;
+                                    text-indent: -9999em;
+                                    background: url(//ssl.vanclimg.com/shopping/shopping3/cartsprite.png) no-repeat;
+                                    overflow: hidden;
+                                }
+                                .minus{
+                                    background-position: -51px 0;
+                                    &:hover{background-position: -68px 0;}
+                                }
+                                .add{
+                                    background-position: 0 0;
+                                    &:hover{background-position: -17px 0;}
+                                }
+                            }
+                            .simple-dialog{
+                                background-color: #fff;
+                                position: absolute;
+                                z-index: 3;
+                                display: none;
+                                width: 150px;
+                                margin-left: -86.5px;
+                                margin-top: -19px;
+                                border: 1px solid #A10000;
+                                text-align: left;
+                                left: 896px;
+                                top:-36px;
+                                p{padding: 10px 0 0 15px;}
+                                .buttons{
+                                    margin: 10px 0;
+                                    text-align: center;
+                                    a{
+                                        margin-right: 10px;
+                                        cursor: pointer;
+                                    }
+                                }
+                                span{
+                                    background: url(//ssl.vanclimg.com/shopping/vancl.plugins/icon-shopping.gif) no-repeat;
+                                    position: absolute;
+                                    overflow: hidden;
+                                    background-position: 0 0;
+                                    height: 8px;
+                                    width: 9px;
+                                    left: 65%;
+                                    bottom: -8px;
+                                }
+                            }
+                        }
+                    }
+                    .bar-summary{
+                        margin-top: 11px;
+                        padding: 12px 10px 0px 0;
+                        background: none repeat scroll 0 0 #FFFEF5;
+                        border: 1px solid #EBE5BB;
+                        line-height: 25px;
+                        width: 968px;
+                        height: 104px;
+                        position: relative;
+                        top: 0px;
+                        z-index: 1;
+                        .bar-sel{
+                            padding: 14px 42px 0 13px;
+                            label{text-align: left;}
+                            .alldel{
+                                background: transparent;
+                                border: 0 none;
+                                color: #333;
+                                cursor: pointer;
+                                margin-left: 20px;
+                            }
+                            span{
+                                margin-left: 42px;
+                                text-align: left;
+                                em{
+                                    color: #a10000;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .summary{
+                            float: left;
+                            padding: 10px 10px 10px 13px;
+                            span{
+                                font-size: 24px;
+                                margin-right: 0;
+                                color: #a10000;
+                                em{font-weight: bold;}
+                            }
+                        }
+                        .btn-panel{
+                            padding: 0 0 15px 0;
+                            float: right;
+                            .go-buy{
+                                display: inline-block;
+                                vertical-align: middle;
+                                color: #666;
+                                height: 37px;
+                                line-height: 37px;
+                                margin-left: 10px;
+                                font-size: 14px;
+                                text-align: center;
+                                width: 122px;
+                                background: url(//ssl.vanclimg.com/shopping/newpromotions/newpromotion.gif) no-repeat -160px 0;
+                                overflow: hidden;
+                            }
+                            .checkout{
+                                display: inline-block;
+                                vertical-align: middle;
+                                color: #fff;
+                                height: 50px;
+                                line-height: 50px;
+                                margin-left: 10px;
+                                padding-left: 50px;
+                                width: 110px;
+                                font-family:  Microsoft Yahei, Microsoft JHenghei, SimHei;
+                                font-weight: 400;
+                                font-size: 20px;
+                                background: url(//ssl.vanclimg.com/shopping/newpromotions/newpromotion.gif) no-repeat 0 0;
+                                overflow: hidden;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

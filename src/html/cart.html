@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <!-- 版心 -->
+    <div class="wrapper">
+        <!-- 头部 -->
+        <header>
+            <a href="/index.html" class="logo"><img src="http://i2.vanclimg.com/cms/20140829/vancl-logo.png" alt=""></a>
+            <div class="help">帮助中心</div>
+            <div class="users">您好！
+                <span id="welText">欢迎来到凡客诚品。</span>
+                <span class="before-login" >
+                        <a href="/html/login.html">登录</a>
+                        <span>|</span>
+                        <a href="/html/register.html">注册</a>
+                </span>
+                <a href="javascript:;" class="username">123456</a>
+                <span class="after-login">
+                        <a href="javascript:;" id="exit">退出登录</a>|<a href="/html/login.html">更换用户</a>
+                </span>
+        </div>
+        </header>
+        <!-- 购物车主题区开始 -->
+        <main>
+            <!-- 步骤提醒导航 -->
+            <div class="location">
+                <em>1.我的购物车</em>
+                <span>2.填写核对信息单</span>
+                <span>3.成功提交订单</span>
+            </div>
+            <!-- 购物车内容 -->
+            <div class="content">
+                <div class="cart-top"><h2>我的购物车</h2></div>
+                <div class="tip"><span>温馨提示：</span>1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。</div>
+                <div class="cart-products">
+                    <!-- 购物车标题 -->
+                    <ul class="products-title">
+                        <li class="bar-title "><input type="checkbox" class="allcheck ckb" id="allCheckTop" checked="checked"><label for="">全选</label></li>
+                        <li class="shopname">商品名称</li>
+                        <li class="size">尺寸</li>
+                        <li class="unit-price">单价</li>
+                        <li class="num">数量</li>
+                        <li class="discount">优惠</li>
+                        <li class="subtotal">小计</li>
+                        <li class="operation">操作</li>
+                    </ul>
+                    <!-- 购物车列表板块开始 -->
+                    <ul class="products-cont" id="productsCont">
+                        <script type="text/html" id="cartTemplate">
+                            {{each cart shop}}
+                            <li id="temShop" data-id="{{shop.id}}">
+                                <span class="bar-title"><input type="checkbox" class="ckb" id="aloneCheck" checked="checked"></span>
+                                <a href="javascript:;" class="cart-img"><img src="{{shop.img[0]}}" alt=""></a>
+                                <a href="javascript:;" class="shopname">{{shop.text}}</a>
+                                <span class="size">L</span>
+                                <span class="unit-price">￥{{shop.price}}.00</span>
+                                <span class="num">
+                                    <a href="javscript:;" class="minus" id="minus">-</a>
+                                    <input type="text" class="numText"  value="{{shop.num}}" disabled="disabled">
+                                    <a href="javscript:;" class="add" id="add">+</a>
+                                </span>
+                                <span class="discount">-</span>
+                                <span class="subtotal">￥<em>{{shop.num*shop.price}}</em>.00</span>
+                                <a class="operation" id="onlydel">删除</a>
+                                <div class="simple-dialog">
+                                    <p class="msg">确定要删除此商品吗？</p>
+                                    <p class="buttons">
+                                        <a href="javscript:;" id="okBtn">确定</a>
+                                        <a href="javscript:;" id="cancelBtn">取消</a>
+                                    </p>
+                                        <span class=""></span>
+                                </div>
+                            </li>
+                            {{/each}}
+                        </script>
+                    </ul>
+                    <!-- 购物车列表板块结束 -->
+
+                    <!-- 结算板块 -->
+                    <div class="bar-summary">
+                        <div class="bar-sel">
+                            <input type="checkBox" class="allcheck ckb" id="allCheckBot" checked="checked">
+                            <label for="">全选</label>
+                            <a href="javscript:;" class="alldel" id="alldel">删除</a>
+                            <span>数量总计：<em>1</em>件</span>
+                            <span><em>您目前可享受全场购物免运费</em></span>
+                        </div>
+                        <div class="summary">
+                            产品金额总计(不含运费)：
+                            <span id="totalPrice">￥<em>0.00</em></span>
+                        </div>
+                        <div class="btn-panel">
+                            <a href="javascript:;" class="go-buy">&gt;&gt;继续购物</a>
+                            <a href="javascript:;" class="checkout">去结算&lt;&lt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- 主题区域结束 -->
+        <!-- 尾部容器 -->
+        <footer id="smFooter"></footer>
+    </div>    
+<script src="/libs/requirejs/require.js" data-main="/js/cart.js"></script>
+</body>
+</html>
