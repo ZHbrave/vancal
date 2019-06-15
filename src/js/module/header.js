@@ -30,12 +30,22 @@ define(["jquery","cookie"], $ =>{
                 //请求接口
                 $.getJSON('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?cb=?&wd='+keyWords, data => {
                 data = data.s.slice(0,10);
+                var evl = 0;
                 $(data).each((index,item)=>{
                     $("<li>").html(item).appendTo($("#searchResults"));
-                    
                 })
-        })
+                console.log(22);
+                $("#searchResults")[0].onclick=(event)=>{
+                    console.log($(event.target).html());
+                    $(".search-text").val($(event.target).html())
+                    $("#searchResults").html("")
+                }
+                
             })
+        })
+        $("body:not(.search)").on('click',()=>{
+            $("#searchResults").html("")
+        })
         },
 
         isLogin(){
